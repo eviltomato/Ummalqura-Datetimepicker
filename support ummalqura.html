@@ -1,0 +1,31 @@
+</!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Suppprt Umm Al Qurra</title>
+<link rel="stylesheet" type="text/css" href="css/widgets.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/calendars.js"></script>
+<script type="text/javascript" src="js/ummalqura.js"></script>
+<script type="text/javascript" src="js/ummalqura.format.js"></script>
+<script type="text/javascript" src="js/ummalqura.datetimepicker.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$this = $("#id_datetime");
+		var opts = {};
+		opts.pattern = "yyyy-MM-dd HH:mm:ss";
+		$this.datepicker(opts);
+		$("#id_date").datepicker({pattern:"yyyy-MM-dd"});
+		$("#id_time").datepicker({pattern:"HH:mm:ss"});
+	})
+</script>
+</head>
+<body>
+<div id="div1">
+	<input id="id_datetime" type="text" name="datetime">
+	<input id="id_date" type="text" name="date">
+	<input id="id_time" type="text" name="time">
+</div>
+</body>
+</html>
